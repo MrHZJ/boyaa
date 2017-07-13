@@ -7,321 +7,9 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <title>Document</title>
+     <link rel="stylesheet" href="src/style/style.css"/>
   <style type="text/css">
-	body,h1,h2,h3,h4,h5,h6,div,ul,ol,li,dl,dt,dd,div,p,img{
-		padding:0;
-		margin:0;
-	}
-	body{
-		font:12px/24px  'Arial','microsoft yahei';
-	}
-	.innerCenter{
-		width:1000px;
-		margin:0 auto;
-	}
-	.cl{
-		clear:both;
-	}
-/* header---css */
-	.header{
-		background:#191D3A;
-		overflow:hidden;
-		_zoom:1;
-	}
-	.header h1{
-		float:left;
-		height:58px;
-		margin-right:35px;
-	}
-	.header .nav ul{
-		list-style:none;
-	}
-	.header .nav ul li{
-		float:left;
-		/* width:100px; */
-		line-height:58px;
-		text-align:center;
-		border-left:1px solid #252947;
-	}
-	.header .nav ul li:last-child{
-		border-right:1px solid #252947;
-	}
-	.header .nav ul li a{
-		display:block;
-		width:100px;
-		font-size:1.166em;
-		text-decoration:none;
-		color:#818496;
-	}
-	.header .nav ul li a:hover{
-		color:#E2E4ED;
-		background:#252947;
-	}
-	.header .nav ul li.current a{
-		color:#E2E4ED;
-		background:#252947;
-	}
-	.header .jrwm{
-		float:left;
-	}
-	.header .jrwm  a{
-		display:block;
-		width:100px;
-		line-height:34px;
-		padding:12px 0 0 48px;
-		background:url('img/jrwm.png') no-repeat right bottom;
-		color:#FFFFF6;
-		font-size:1.166em;
-		text-decoration:none;
-		text-align:center;
-	}
-/* header---css */
-/* banner---css */
-	.banner{
-		position:relative;
-		height:463px;
-		background:url('img/banner.jpg') no-repeat center top	 ;
-	}
-	.banner ul{
-		position:absolute;
-		left:0;
-		right:0;
-		bottom:20px;
-		margin:auto;
-		list-style:none;
-		width:120px;
-		position:absolute;
-	}
-	.banner ul li{
-		float:left;
-		height:12px;
-		width:12px;
-		margin-right:15px;
-		background:#FDDE90;
-		border-radius:50%;
-	}
-	.banner ul li.current{
-		background:#fff;
-	}
-	.banner ul li:last-child{
-		margin-right:0;
-	}
-/* banner---css */
-/* content---css */
-	.content .cTop{
-		position:relative;
-		height:229px;
-		padding-top:50px;
-		border-bottom:1px solid #DBE1E7;
-	}
-	.content .cTop ul{
-		list-style:none;
-	}
-	.content .cTop ul li{
-		float:left;
-		margin-right:43px;
-		text-align:center;
-	}
-	.content .cTop ul li img{
-		width:218px;
-	}
-	.content .cTop ul li:last-child{
-		margin-right:0;
-	}
-	.content .cTop ul li:last-child img{
-		width:217px;
-	}
-	.content .cTop ul li h3{
-		margin-top:3px;
-		line-height:24px;
-		font-size:13px;
-		font-weight:bold;
-	}
-	.content .cTop ul li a{
-		padding-right:11px;
-		background:url('img/sjx.png') no-repeat right center;
-		color:#38B774;
-		text-decoration:none;
-	}
-	.content .cTop .btn{
-		position:absolute;
-		bottom:-5px;
-		left:0;
-		right:0;
-		margin:auto;
-		width:100px;
-		padding-left:17px;
-		background-color:#fff;
-	}
-	.content .cTop .btn ul{
-		list-style:none;
-	}
-	.content .cTop .btn ul li{
-		float:left;
-		width:11px;
-		height:11px;
-		background-color:#B5C0CB;
-		margin-right:14px;
-		border-radius:50%;
-		cursor:pointer;
-	}
-	.content .cTop .btn ul li.on{
-		background-color:#2FBC71;
-	}
-	.content .cBottom{
-		height:314px;
-		width:1000px;
-		padding:53px 0;
-	}
-	.content .cBottom .cbr,.content .cBottom .cbl{
-		float:left;
-		height:310px;
-		width:500px;
-		background:blue;
-	}
-	.content .cBottom .cbl,.content .cBottom .cbr{
-		position :relative;
-		background:url('img/bynewsbg.jpg') no-repeat ;
-	}
-	.content .cBottom .cbl .btn,.content .cBottom .cbr .btn{
-		position:absolute;
-		left:218px;
-		top:40px;
-		width:64px;
-		line-height:26px;
-		border-radius:4px;
-		text-align:center;
-	}
-	.content .cBottom .cbl .btn{
-		border:1px solid #33B972;
-	}
-	.content .cBottom .cbr .btn{
-		border:1px solid #fff;
-	}
-	.content .cBottom .cbl .btn a,.content .cBottom .cbr .btn a{
-		display:block;
-		width:51px;
-		padding-right:13px;
-		text-decoration:none;
-	}
-	.content .cBottom .cbl .btn a{
-		color:#30BD72;
-	}
-	.content .cBottom .cbr .btn a{
-		color:#fff;
-	}
-	.content .cBottom .cbl .btn span,.content .cBottom .cbr .btn span{
-		position:absolute;
-		right:8px;
-		top:4px;
-		line-height:12px;
-	}
-	.content .cBottom .cbr{
-		background:url('img/byhrbg3.jpg') no-repeat ;
-	}
-	.content .cBottom .cbr .title{
-		position:absolute;
-		left:81px;
-		top:46px;
-		width:112px;
-		/* height:43px; */
-		color:#fff;
-	}
-	.content .cBottom .cbr .title dt{
-		font-size:28px;
-		font-weight:900;
-	}
 
-	.content .cBottom .cbl .news{
-		position:absolute;
-		bottom:0;
-		left:0;
-		width:460px;
-		height:190px;
-		padding:0 20px;
-	}
-	.content .cBottom .cbl .news ul{
-		list-style:none;
-	}
-	.content .cBottom .cbl .news ul li{
-		line-height:50px;
-		border-bottom:1px solid #DBE1E7;
-	}
-	.content .cBottom .cbl .news ul li:first-child{
-		line-height:40px;
-	}
-	.content .cBottom .cbl .news ul li a{
-		text-decoration:none;
-		color:#444895;
-		font-size:14px;
-	}
-	.content .cBottom .cbl .news ul li a span{
-		color:#AFC4DC;
-		margin-right:22px;
-		font-size:9px;
-	}
-
-	.content .cBottom .cbr .xinxi{
-		position:absolute;
-		top:110px;
-		left:0;
-		width:305px;
-		padding:0 20px;
-	}
-	.content .cBottom .cbr .xinxi h3{
-		line-height:22px;
-		font-size:12px;
-	}
-	.content .cBottom .cbr .xinxi ul{
-		list-style:none;
-	}
-	.content .cBottom .cbr .xinxi ul li{
-		line-height:37px;
-		border-bottom:1px solid #6FDEA3;
-	}
-	.content .cBottom .cbr .xinxi ul li a{
-		font-size:12px;
-		color:#fff;
-		text-decoration:none;
-	}
-/* content---css */
-/* footer--css */
-.footer{
-	background:#191D3A;
-	/* height:91px; */
-	color:#3F6168;
-	overflow:hidden;
-	_zoom:1;
-}
-.footer .fl{
-	float:left;
-	height:91px;
-	font-size:11px;
-	width:130px;
-}
-.footer .fl p{
-	float:left;
-	font-size:11px;
-	line-height:91px;
-	margin-right:10px;
-}
-.footer .fl p.line{
-	margin-right:9px;
-}
-.footer .fr{
-	float:right;
-	width:713px;
-}
-.footer .fr p{
-	float:right;
-	font-size:11px;
-	line-height:91px;
-}
-.footer .fr img{
-	float:right;
-	margin:21px 4px 0 9px;
-}
-/* footer--css */
   </style>
  </head>
  <body>
@@ -329,7 +17,7 @@
 		<div class="header">
 			<div class="innerCenter">
 				<h1>
-					<a href=""><img src="img/logo.png" height='58px' alt="" /></a>
+					<a href=""><img src="src/img/logo.png" height='58px' alt="" /></a>
 				</h1>
 				<div class="nav">
 					<ul>
@@ -364,22 +52,22 @@
 			<div class="cTop">
 				<ul>
 					<li>
-						<img src="img/xcp1.png" alt="" />
+						<img src="src/img/xcp1.png" alt="" />
 						<h3>BPT宣传片</h3>
 						<a href="">点击播放</a>
 					</li>
 					<li>
-						<img src="img/xcp2.png" alt="" />
+						<img src="src/img/xcp2.png" alt="" />
 						<h3>博雅互动宣传视频</h3>
 						<a href="">点击播放</a>
 					</li>
 					<li>
-						<img src="img/xcp3.png" alt="" />
+						<img src="src/img/xcp3.png" alt="" />
 						<h3>斗地主</h3>
 						<a href="">LANDLORDS</a>
 					</li>
 					<li >
-						<img src="img/xcp4.png" alt="" />
+						<img src="src/img/xcp4.png" alt="" />
 						<h3>德州扑克</h3>
 						<a href="">TEXAS HOLD'EM POKER</a>
 					</li>
@@ -440,7 +128,7 @@
 						<p> 免责声明</p>
 				</div>
 				<div class='fr'>
-					<img src="img/govIcon.gif"width='36' height='51' alt="" />
+					<img src="src/img/govIcon.gif"width='36' height='51' alt="" />
 					<p class='copy'>Copyright &copy;内容内容内容内容&nbsp;内容内容内容内容&nbsp;内容内容内容内容&nbsp;内容内容内容内容&nbsp;内容内容内容内容&nbsp;</p>
 					
 				</div>
